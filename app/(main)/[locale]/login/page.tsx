@@ -1037,7 +1037,12 @@ function LoginPageContent() {
             <div className="px-8 pt-12 pb-4 text-center">
               <div className="inline-flex items-center justify-center w-20 h-20 mb-6">
                 <img
-                  src={withBasePath(resolvedTheme === 'dark' ? loginLogoDarkUrl : loginLogoLightUrl)}
+                  src={withBasePath(
+                    ((resolvedTheme === 'dark' ? loginLogoDarkUrl : loginLogoLightUrl) && 
+                     !(resolvedTheme === 'dark' ? loginLogoDarkUrl : loginLogoLightUrl).includes('Bulwark'))
+                      ? (resolvedTheme === 'dark' ? loginLogoDarkUrl : loginLogoLightUrl)
+                      : '/branding/lambar.png'
+                  )}
                   alt={appName}
                   className="max-w-20 max-h-20 object-contain"
                 />
@@ -1199,7 +1204,12 @@ function LoginPageContent() {
             <div className="px-8 pt-10 pb-6 text-center">
               <div className="inline-flex items-center justify-center mb-5 transition-transform duration-300 hover:scale-105">
                 <img
-                  src={withBasePath(resolvedTheme === 'dark' ? loginLogoDarkUrl : loginLogoLightUrl)}
+                  src={withBasePath(
+                    ((resolvedTheme === 'dark' ? loginLogoDarkUrl : loginLogoLightUrl) && 
+                     !(resolvedTheme === 'dark' ? loginLogoDarkUrl : loginLogoLightUrl).includes('Bulwark'))
+                      ? (resolvedTheme === 'dark' ? loginLogoDarkUrl : loginLogoLightUrl)
+                      : '/branding/lambar.png'
+                  )}
                   alt={appName}
                   className="h-24 w-auto object-contain drop-shadow-md"
                   style={loginLogoStyle}
