@@ -1191,30 +1191,31 @@ function LoginPageContent() {
         )}
       </div>
 
-      <div className="w-full max-w-[400px] mx-auto">
-        {/* Card container */}
-        <div className="rounded-2xl border border-border/60 bg-background/80 backdrop-blur-sm shadow-xl shadow-black/5 dark:shadow-black/20 overflow-hidden">
-          {/* Header section with logo */}
-          <div className="px-8 pt-10 pb-6 text-center">
-            <div className={cn("inline-flex items-center justify-center mb-5", !hasLogoSize && "w-16 h-16")}>
-              <img
-                src={withBasePath(resolvedTheme === 'dark' ? loginLogoDarkUrl : loginLogoLightUrl)}
-                alt={appName}
-                className={cn("object-contain", !hasLogoSize && "max-w-16 max-h-16")}
-                style={loginLogoStyle}
-              />
+      <div className="w-full max-w-[420px] mx-auto">
+        {/* Double-Bezel Card Container */}
+        <div className="p-1 rounded-[2rem] bg-gradient-to-b from-red-600/20 via-border/50 to-border/10 shadow-2xl shadow-red-950/5 dark:shadow-red-950/25">
+          <div className="rounded-[calc(2rem-0.25rem)] border border-border/60 bg-background/95 backdrop-blur-md shadow-inner overflow-hidden">
+            {/* Header section with logo */}
+            <div className="px-8 pt-10 pb-6 text-center">
+              <div className="inline-flex items-center justify-center mb-5 transition-transform duration-300 hover:scale-105">
+                <img
+                  src={withBasePath(resolvedTheme === 'dark' ? loginLogoDarkUrl : loginLogoLightUrl)}
+                  alt={appName}
+                  className="h-24 w-auto object-contain drop-shadow-md"
+                  style={loginLogoStyle}
+                />
+              </div>
+              {loginShowHeading && (
+                <h1 className="text-xl font-bold text-foreground tracking-tight">
+                  {isAddAccountMode ? t("add_account_title") : appName}
+                </h1>
+              )}
+              {loginShowSubtitle && (
+                <p className="text-xs text-muted-foreground mt-1.5 uppercase tracking-wider font-semibold">
+                  {isAddAccountMode ? t("add_account_subtitle") : "Layanan Email Kedinasan Terintegrasi"}
+                </p>
+              )}
             </div>
-            {loginShowHeading && (
-              <h1 className="text-2xl font-semibold text-foreground tracking-tight">
-                {isAddAccountMode ? t("add_account_title") : appName}
-              </h1>
-            )}
-            {loginShowSubtitle && (
-              <p className="text-sm text-muted-foreground mt-1.5">
-                {isAddAccountMode ? t("add_account_subtitle") : (t("title") !== appName ? t("title") : "Sign in to your account")}
-              </p>
-            )}
-          </div>
 
           {/* Form section */}
           <div className="px-8 pb-8">
@@ -1655,14 +1656,16 @@ function LoginPageContent() {
             )}
           </div>
         </div>
+      </div>
 
         {/* Company name & links - below card */}
-        <div className="mt-6 flex flex-col items-center gap-2">
-          {loginCompanyName && (
-            <p className="text-center text-xs text-muted-foreground/60 font-medium">
-              {loginCompanyName}
-            </p>
-          )}
+        <div className="mt-6 flex flex-col items-center gap-1.5">
+          <p className="text-center text-xs text-muted-foreground/80 font-semibold tracking-wide">
+            {loginCompanyName || "Pemerintah Kabupaten Lampung Barat"}
+          </p>
+          <p className="text-center text-[11px] text-muted-foreground/50">
+            Dinas Komunikasi dan Informatika
+          </p>
           {(loginImprintUrl || loginPrivacyPolicyUrl || loginWebsiteUrl) && (
             <div className="flex items-center gap-3 flex-wrap justify-center">
               {loginWebsiteUrl && (

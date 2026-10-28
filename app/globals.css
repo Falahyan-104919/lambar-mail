@@ -25,18 +25,18 @@
 
   --color-border: #e2e8f0;
   --color-input: #e2e8f0;
-  --color-ring: #94a3b8;
-  --color-background: #ffffff;
+  --color-ring: #dc2626;
+  --color-background: #f8fafc;
   --color-foreground: #0f172a;
-  --color-primary: #3b82f6;
+  --color-primary: #dc2626;
   --color-primary-foreground: #ffffff;
-  --color-secondary: #f8fafc;
+  --color-secondary: #f1f5f9;
   --color-secondary-foreground: #0f172a;
   --color-muted: #f1f5f9;
   --color-muted-foreground: #64748b;
-  --color-accent: #dbeafe;
-  --color-accent-foreground: #1e40af;
-  --color-destructive: #ef4444;
+  --color-accent: #fee2e2;
+  --color-accent-foreground: #991b1b;
+  --color-destructive: #b91c1c;
   --color-destructive-foreground: #ffffff;
   --color-popover: #ffffff;
   --color-popover-foreground: #0f172a;
@@ -45,34 +45,34 @@
   --color-sidebar: #f8fafc;
   --color-sidebar-foreground: #0f172a;
   --color-sidebar-border: #e2e8f0;
-  --color-sidebar-accent: #f1f5f9;
-  --color-sidebar-accent-foreground: #0f172a;
+  --color-sidebar-accent: #fee2e2;
+  --color-sidebar-accent-foreground: #991b1b;
 
   /* Card */
   --color-card: #ffffff;
   --color-card-foreground: #0f172a;
 
   /* Semantic status colors */
-  --color-success: #22c55e;
+  --color-success: #16a34a;
   --color-success-foreground: #ffffff;
-  --color-warning: #eab308;
+  --color-warning: #d97706;
   --color-warning-foreground: #ffffff;
-  --color-info: #3b82f6;
+  --color-info: #dc2626;
   --color-info-foreground: #ffffff;
 
   /* Selection states */
-  --color-selection: #dbeafe;
-  --color-selection-foreground: #1e40af;
+  --color-selection: #fee2e2;
+  --color-selection-foreground: #991b1b;
 
   /* Unread indicator */
-  --color-unread: #3b82f6;
+  --color-unread: #dc2626;
 
   /* Chart colors */
-  --color-chart-1: #3b82f6;
-  --color-chart-2: #22c55e;
-  --color-chart-3: #f59e0b;
-  --color-chart-4: #ef4444;
-  --color-chart-5: #8b5cf6;
+  --color-chart-1: #dc2626;
+  --color-chart-2: #16a34a;
+  --color-chart-3: #d97706;
+  --color-chart-4: #b91c1c;
+  --color-chart-5: #7f1d1d;
 
   /* Settings variables */
   --font-size-base: 16px;
@@ -99,33 +99,33 @@
 }
 
 .dark {
-  --color-border: rgba(128, 128, 128, 0.3);
+  --color-border: rgba(255, 255, 255, 0.08);
   --color-input: #262626;
-  --color-ring: #d4d4d4;
-  --color-background: #0a0a0a;
+  --color-ring: #ef4444;
+  --color-background: #090a0f;
   --color-foreground: #fafafa;
-  --color-primary: #fafafa;
-  --color-primary-foreground: #171717;
-  --color-secondary: #262626;
+  --color-primary: #dc2626;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #1a1c23;
   --color-secondary-foreground: #fafafa;
-  --color-muted: #262626;
-  --color-muted-foreground: #a3a3a3;
-  --color-accent: #1e3a8a;
-  --color-accent-foreground: #dbeafe;
+  --color-muted: #1a1c23;
+  --color-muted-foreground: #94a3b8;
+  --color-accent: #7f1d1d;
+  --color-accent-foreground: #fecaca;
   --color-destructive: #ef4444;
   --color-destructive-foreground: #fafafa;
-  --color-popover: #1c1c1c;
+  --color-popover: #12141a;
   --color-popover-foreground: #fafafa;
 
   /* Sidebar */
-  --color-sidebar: #0a0a0a;
+  --color-sidebar: #090a0f;
   --color-sidebar-foreground: #fafafa;
-  --color-sidebar-border: #262626;
-  --color-sidebar-accent: #1a1a1a;
-  --color-sidebar-accent-foreground: #fafafa;
+  --color-sidebar-border: rgba(255, 255, 255, 0.08);
+  --color-sidebar-accent: rgba(220, 38, 38, 0.15);
+  --color-sidebar-accent-foreground: #fca5a5;
 
   /* Card */
-  --color-card: #141414;
+  --color-card: #12141a;
   --color-card-foreground: #fafafa;
 
   /* Semantic status colors */
@@ -133,18 +133,18 @@
   --color-success-foreground: #ffffff;
   --color-warning: #ca8a04;
   --color-warning-foreground: #ffffff;
-  --color-info: #60a5fa;
+  --color-info: #ef4444;
   --color-info-foreground: #ffffff;
 
   /* Selection states */
-  --color-selection: rgba(59, 130, 246, 0.25);
-  --color-selection-foreground: #93c5fd;
+  --color-selection: rgba(220, 38, 38, 0.25);
+  --color-selection-foreground: #fca5a5;
 
   /* Unread indicator */
-  --color-unread: #60a5fa;
+  --color-unread: #ef4444;
 
   /* Chart colors */
-  --color-chart-1: #60a5fa;
+  --color-chart-1: #ef4444;
   --color-chart-2: #4ade80;
   --color-chart-3: #fbbf24;
   --color-chart-4: #f87171;
